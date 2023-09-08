@@ -48,9 +48,9 @@ class TestEvaluateWebsiteSpeed:
         # Find the input field and enter an invalid URL, then take a screenshot
         input_field = self.driver.find_element(By.NAME, "url")
         input_field.clear()
-        input_field.send_keys("invalid-url")  # Replace with an invalid URL
+        input_field.send_keys("invalid-url")  
         input_field.send_keys(Keys.RETURN)
-        time.sleep(5)  # Wait for the error message to appear
+        time.sleep(5)  
         self.driver.save_screenshot("screenshots/test_evaluate_website_speed_negative.png")
 
         # Find the error message element and verify its presence
@@ -90,13 +90,9 @@ class TestEvaluateWebsiteSpeed:
         # Navigate to a different URL in the new window
         self.driver.get("https://www.debugbear.com/test/website-speed/7tfLDbz7/overview#test-result")
 
-        # Perform actions in the new window (e.g., interacting with elements)
-        # For example, you can find elements and make assertions here
-
         # Switch back to the original window
         self.driver.switch_to.window(self.driver.window_handles[0])
 
-        # Perform actions in the original window (e.g., continue with your test)
 
 
 if __name__ == "__main__":

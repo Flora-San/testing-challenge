@@ -22,7 +22,7 @@ def create_book():
             jsonify({'error': 'Missing required fields'}), 400)
 
     new_book = {
-        'book_id': str(len(books) + 1),
+        'book_id': '1', #str(len(books) + 1),
         'title': data['title'],
         'author': data['author'],
         'published_date': data['published_date'],

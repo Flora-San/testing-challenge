@@ -163,3 +163,6 @@ this pipeline is already running in local environment, with a script.
 
 http://localhost:8080/job/python%20test%20demo/
 
+![image](https://github.com/Flora-San/testing-challenge/assets/115896303/5b51820b-0304-40df-933c-0e2ec667e55a)
+
+

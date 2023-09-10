@@ -151,9 +151,15 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 3. The system returns an alphanumeric code. Enter that code in the Administrator password field and click Continue.
 
 4. The setup prompts to either Install suggested plugins or Select plugins to install. It’s fine to simply install the suggested plugins.
+_You can always install more plugins later. The system continues the initial Jenkins setup._
 
+5. The next step is the Create First Admin User. Enter the credentials you want to use for your Jenkins administrator, then click Save and Continue.
+   
+6.  After this, you should set up the Instance Configuration. This is the preferred network address for this Jenkins installation. Confirm the address you want to use for your server. This is most likely the same address you used to get to this configuration page.
 
+### Step 6: Jenkins pipeline configuration
 once all these config set up you can check the pipeline demo already created for this tests
+this pipeline is already running in local environment, with a script. 
 
 http://localhost:8080/job/python%20test%20demo/
 
